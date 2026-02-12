@@ -4,7 +4,7 @@
   "sites": [
 	{
 	  "key": "Douban",
-	  "name": "豆瓣热播 | 饭太硬核心",
+	  "name": "豆瓣热播",
 	  "type": 3,
 	  "api": "csp_DouDouGuard",
 	  "indexes": 1,
@@ -49,16 +49,6 @@
 	  "searchable": 0,
 	  "quickSearch": 0,
 	  "changeable": 0
-	},
-	{
-	  "key": "alllive",
-	  "name": "🎧一直播➖直播",
-	  "type": 3,
-	  "api": "csp_AllliveGuard",
-	  "searchable": 1,
-	  "quickSearch": 0,
-	  "changeable": 0,
-	  "ext": "uqGL1fpJNAUH7axYx5bf4OWuvyk="
 	},
 	{
 	  "key": "seed",
@@ -390,24 +380,6 @@
 	  "ext": {
 		"json": "https://nos.netease.com/ysf/0075389dca9afadd4614e9713765ff17.txt"
 	  }
-	},
-	{
-	  "key": "fan",
-	  "name": "导航 www.饭太硬.com",
-	  "type": 3,
-	  "api": "csp_XPathGuard",
-	  "searchable": 1,
-	  "quickSearch": 0,
-	  "changeable": 0
-	},
-	{
-	  "key": "cc",
-	  "name": "请勿相信视频中广告",
-	  "type": 3,
-	  "api": "csp_XPathGuard",
-	  "searchable": 1,
-	  "quickSearch": 0,
-	  "changeable": 0
 	}
   ],
   "logo": "https://bdcache1-f1.v3mh.com/image/25-12-16/6941612717007.gif",
@@ -415,7 +387,7 @@
 	{
 	  "name": "山东移动",
       "type": 0,
-      "url": "https://ghproxy.net/https://raw.githubusercontent.com/zx5555/mtv/main/live/my_live.m3u",
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/zx5555/mtv/main/sdyd.txt",
       "playerType": 1
 	},
 	{
@@ -430,38 +402,6 @@
 	  "type": 0,
 	  "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
 	  "playerType": 2
-	},
-	{
-	  "name": "虎牙一起看",
-	  "type": 0,
-	  "url": "https://sub.ottiptv.cc/huyayqk.m3u",
-	  "playerType": 2,
-	  "timeout": 10,
-	  "ua": "okHttp/Mod-1.4.0.0"
-	},
-	{
-	  "name": "斗鱼一起看",
-	  "type": 0,
-	  "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
-	  "playerType": 2,
-	  "timeout": 10,
-	  "ua": "okHttp/Mod-1.4.0.0"
-	},
-	{
-	  "name": "B站直链",
-	  "type": 0,
-	  "url": "https://sub.ottiptv.cc/bililive.m3u",
-	  "playerType": 2,
-	  "timeout": 10,
-	  "ua": "okHttp/Mod-1.4.0.0"
-	},
-	{
-	  "name": "YY轮播",
-	  "type": 0,
-	  "url": "https://sub.ottiptv.cc/yylunbo.m3u",
-	  "playerType": 2,
-	  "timeout": 10,
-	  "ua": "okHttp/Mod-1.4.0.0"
 	}
   ]
 }
