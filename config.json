@@ -413,11 +413,10 @@
   "logo": "https://bdcache1-f1.v3mh.com/image/25-12-16/6941612717007.gif",
   "lives": [
 	{
-	  "name": "写鸭",
-	  "type": 0,
-	  "url": "https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true",
-	  "timeout": 10,
-	  "ua": "bingcha/1.1(mianfeifenxiang)"
+	  "name": "🚀自动更新源",
+      "type": 0,
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/zx5555/mtv/main/live/my_live.m3u",
+      "playerType": 1
 	},
 	{
 	  "name": "develop202",
