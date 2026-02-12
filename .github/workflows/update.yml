@@ -3,7 +3,7 @@ name: 自动更新直播源
 # 触发机制：每天北京时间早上 6:00 (UTC 22:00) 自动运行
 on:
   schedule:
-	- cron: '0 22 * * *'
+    - cron: '0 22 * * *'
   # 允许手动点按钮触发
   workflow_dispatch:
 
@@ -12,24 +12,22 @@ permissions:
 
 jobs:
   update:
-	runs-on: ubuntu-latest
-	steps:
-	  - name: 检出代码
-		uses: actions/checkout@v3
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
 
-	  - name: 创建目录
-		run: mkdir -p live
+      - name: 创建目录
+        run: mkdir -p live
 
-	  - name: 下载最新直播源 (抓取范明明 IPv6 源)
-		# 这里使用 wget 下载外部源，并重命名保存到 live 文件夹
-		run: |
-		  wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -O live/my_live.m3u
+      - name: 下载最新直播源 (抓取范明明 IPv6 源)
+        run: |
+          wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -O live/my_live.m3u
 
-	  - name: 提交更改到仓库
-		run: |
-		  git config --local user.email "actions@github.com"
-		  git config --local user.name "GitHub Actions"
-		  git add live/my_live.m3u
-		  # 如果文件有变化才提交
-		  git commit -m "Auto update live source" || exit 0
-		  git push
+      - name: 提交更改到仓库
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add live/my_live.m3u
+          git commit -m "Auto update live source" || exit 0
+          git push
