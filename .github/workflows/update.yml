@@ -20,9 +20,9 @@ jobs:
       - name: 创建目录
         run: mkdir -p live
 
-      - name: 下载最新直播源 (抓取范明明 IPv6 源)
+      - name: 下载最新直播源 
         run: |
-          wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -O live/my_live.m3u
+          wget https://gh-proxy.org/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1 -O live/my_live.m3u
 
       - name: 提交更改到仓库
         run: |
