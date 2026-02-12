@@ -413,9 +413,9 @@
   "logo": "https://bdcache1-f1.v3mh.com/image/25-12-16/6941612717007.gif",
   "lives": [
 	{
-	  "name": "🚀自动更新源",
+	  "name": "山东移动",
       "type": 0,
-      "url": "https://ghproxy.net/https://raw.githubusercontent.com/zx5555/mtv/main/live/my_live.m3u",
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/zx5555/mtv/main/sdyd.txt",
       "playerType": 1
 	},
 	{
